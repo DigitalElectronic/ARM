@@ -86,6 +86,9 @@ Go here if you want get setting this.
 
 ( dir/userpatches/fel_post_prepare ) is executed once after setting up u-boot script and NFS share, you can use it to add extra stuff to boot.scr (like gpio set or setenv machid) based on device name.
 
+Communication SD-UART.
+https://linux-sunxi.org/How_to_boot_the_A10_or_A20_over_the_network
+
 ___________________________________________________________________________________________________________________________
 
 
