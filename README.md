@@ -43,6 +43,26 @@ New configuration file config-example.conf and symlink config-default.conf will 
 ___________________________________________________________
 
 
+KERNEL_CONFIGURE ( yes | no ):
+yes: Automatically call kernel’s make menuconfig (add or remove modules or features).
+no: Use provided kernel configuration provided by Armbian.
+leave empty to display selection dialog each time.
+
+REPOSITORY_INSTALL (comma-separated list): list of core packages which will be installed from repository.
+Available options: u-boot, kernel, bsp, armbian-config, armbian-firmware.
+Set to “” to use packages one from local output or build if not available.
+
+BUILD_DESKTOP ( yes | no ):
+yes: build image with minimal desktop environment.
+no: build image with console interface only.
+
+CARD_DEVICE ( /dev/sdX ): set to the device of your SD card. The image will be burned and verified using Etcher for CLI.
+
+PROGRESS_DISPLAY ( none | plain | dialog ): way to display output of verbose processes - compilation, packaging, debootstrap.
+
+________________________________________________________________________________________________________________________________________
+
+
 
 
 
