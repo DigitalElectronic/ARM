@@ -63,6 +63,26 @@ PROGRESS_DISPLAY ( none | plain | dialog ): way to display output of verbose pro
 ________________________________________________________________________________________________________________________________________
 
 
+What is FEL/NFS boot?
+
+FEL/NFS boot mode is a possibility to test freshly created Armbian distribution without using SD card. It is implemented by loading u-boot, kernel, initrd, boot script and .bin/.dtb file via USB FEL mode and providing root filesystem via NFS share.
+
+NOTE: this mode is designed only for testing. To use root on NFS permanently, use ROOTFS_TYPE=nfs option. NOTE: “hot” switching between kernel branches (default <-> dev/next) is not supported
+
+
+Connect the UART console while it is off ;
+
+./compile.sh 
+KERNEL_ONLY=no
+BOARD=cubietruck 
+BRANCH=current P
+ROGRESS_DISPLAY=plain 
+RELEASE=jessie 
+BUILD_DESKTOP=no 
+ROOTFS_TYPE=fel
+
+( dir/userpatches/fel_post_prepare ) is executed once after setting up u-boot script and NFS share, you can use it to add extra stuff to boot.scr (like gpio set or setenv machid) based on device name.
+
 
 
 
