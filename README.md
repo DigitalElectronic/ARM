@@ -23,7 +23,7 @@ cd build
 ![stm32h747i-eval_1](https://user-images.githubusercontent.com/74788266/128599376-850917c3-2a7b-4482-8523-3efa1ee381d6.jpg)
 
 
-1º  Parameters to select the options
+2º  Parameters to select the options
 --------------------------------------------------------
 
 ./compile.sh \
