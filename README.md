@@ -15,8 +15,7 @@ https://github.com/armbian/build.git
 
 apt-get -y -qq install git  
 git clone --depth 1 https://github.com/armbian/build  
-cd build 
-./compile.sh    
+cd build    
 
 --------------------------------------------------------
 
