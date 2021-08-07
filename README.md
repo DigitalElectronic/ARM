@@ -82,10 +82,10 @@ BUILD_DESKTOP=no
 ROOTFS_TYPE=fel
 
 
-Go here if you can setting this.
+Go here if you get setting this.
 
 ( dir/userpatches/fel_post_prepare ) is executed once after setting up u-boot script and NFS share, you can use it to add extra stuff to boot.scr (like gpio set or setenv machid) based on device name.
 
-
+___________________________________________________________________________________________________________________________
 
 
