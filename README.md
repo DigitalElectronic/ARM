@@ -31,10 +31,7 @@ CARD_DEVICE="/dev/sda"
 __________________________________________________________
 
 New configuration file config-example.conf and symlink config-default.conf will be created.
-
 ___________________________________________________________
-
-
 KERNEL_CONFIGURE ( yes | no ):
 yes: Automatically call kernel’s make menuconfig (add or remove modules or features).
 no: Use provided kernel configuration provided by Armbian.
@@ -50,10 +47,8 @@ no: build image with console interface only.
 
 CARD_DEVICE ( /dev/sdX ): set to the device of your SD card. The image will be burned and verified using Etcher for CLI.
 
-PROGRESS_DISPLAY ( none | plain | dialog ): way to display output of verbose processes - compilation, packaging, debootstrap.
-
+PROGRESS_DISPLAY ( none | plain | dialog ): way to display output of verbose processes - compilation, packaging, debootstrap.</p>
 ________________________________________________________________________________________________________________________________________
-
 
 What is FEL/NFS boot?
 
@@ -73,7 +68,6 @@ RELEASE=jessie
 BUILD_DESKTOP=no 
 ROOTFS_TYPE=fel
 
-
 Go here if you want get setting this.
 
 ( dir/userpatches/fel_post_prepare ) is executed once after setting up u-boot script and NFS share, you can use it to add extra stuff to boot.scr (like gpio set or setenv machid) based on device name.
@@ -88,5 +82,3 @@ https://linux-sunxi.org/How_to_boot_the_A10_or_A20_over_the_network
 https://github.com/linux-sunxi/sunxi-tools
 
 ___________________________________________________________________________________________________________________________
-
-
