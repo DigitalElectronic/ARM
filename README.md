@@ -1,13 +1,3 @@
-# ARM
-ARM-BOOT
-
-<img width="669" alt="12312" src="https://user-images.githubusercontent.com/74788266/128608260-6a7a7d38-c716-4a00-99c9-e8a2cb1337d3.png">
-
-
-
-Hi. In this web you can view how i boot ARM System from Windows for ARM32Chip.
-
-
 The Image of ARM-Cpu.
 ------------------------
 https://github.com/armbian/build.git
