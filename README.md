@@ -1,4 +1,4 @@
-The Image of ARM-Cpu.
+The Source-Code link.
 ------------------------
 https://github.com/armbian/build.git
 
